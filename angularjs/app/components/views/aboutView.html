@@ -2,3 +2,10 @@
 	<div>AngularJS starter application</div>
 	<div>This is About View</div>
 </div>
+
+<h3>Our Staff</h3>
+<div ng-repeat="person in people">
+  <h5>{{person.name}} </h5>
+  <h6>{{person.role}}</h6>
+  <hr>
+</div>

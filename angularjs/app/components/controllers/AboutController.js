@@ -7,27 +7,45 @@
 
 angular.module('mostPopularListingsApp.about', ['ngRoute'])
 
-// Routing configuration for this module
-.config(['$routeProvider',function($routeprovider){
-	$routeprovider.when('/about', {
-		controller: 'AboutController',
-		templateUrl: 'components/views/aboutView.html'
-	});
-}])
+	// Routing configuration for this module
+	.config(['$routeProvider', function ($routeprovider) {
+		$routeprovider.when('/about', {
+			controller: 'AboutController',
+			templateUrl: 'components/views/aboutView.html'
+		});
+	}])
 
-// Controller definition for this module
-.controller('AboutController', ['$scope', function($scope) {
+	// Controller definition for this module
+	.controller('AboutController', ['$scope', function ($scope) {
 
-	// Just a housekeeping.
-	// In the init method we are declaring all the
-	// neccesarry settings and assignments to be run once
-	// controller is invoked
-	init();
+		// Just a housekeeping.
+		// In the init method we are declaring all the
+		// neccesarry settings and assignments to be run once
+		// controller is invoked
+		init();
 
-	function init(){
-	
-	};
+		function init() {
 
-	this.message = "Hello About!";
+		};
 
-}]);
+		$scope.people = [{
+			name: 'Jimmy Neutron',
+			role: 'Engineer'
+		}, {
+			name: 'Leslie Knope',
+			role: 'Public Relations'
+		}, {
+			name: 'Homer Simpson',
+			role: 'Donut-Fetching Intern'
+		}, {
+			name: 'Michael Scott',
+			role: 'Generic Boss'
+		}, {
+			name: 'Bruton Gaster',
+			role: 'Sidekick'
+		}, {
+			name: 'Leo Martinez',
+			role: 'Developer'
+		}];
+
+	}]);
