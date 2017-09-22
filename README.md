@@ -12,4 +12,4 @@ Jump into the `angularjs` directory and run these commands:
 Jump into the `angular` directory and run these commands:
 1. `npm install -g @angular/cli`
 1. `npm install`
-1. `ng serve`
+1. `npm start`
