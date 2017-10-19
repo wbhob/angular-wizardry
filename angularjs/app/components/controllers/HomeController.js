@@ -28,6 +28,8 @@ angular.module('mostPopularListingsApp.home', ['ngRoute'])
 
 	};
 
-	$scope.date = 'Today is September 22';
+	$scope.noun = {
+		wizard: true
+	};
 
 }]);

@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-
 import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -14,9 +14,9 @@ export class LoginComponent implements AfterViewInit {
   constructor() { }
 
   ngAfterViewInit() {
-    setTimeout(() => {
-      this.loginForm.reset();
-    }, 500);
+    // setTimeout(() => {
+    //   this.loginForm.reset();
+    // }, 500);
   }
 
   echoForm() {

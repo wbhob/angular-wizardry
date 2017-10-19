@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import { HelloWorldService } from '../hello-world.service';
+
+
 
 @Component({
   selector: 'app-home',
@@ -9,16 +10,15 @@ import { HelloWorldService } from '../hello-world.service';
 })
 export class HomeComponent implements OnInit {
 
-  message: string;
-  date: Date;
+  noun: string;
 
   constructor(
     public helloWorldService: HelloWorldService
   ) { }
 
   ngOnInit() {
-    this.message = this.helloWorldService.say('Hello');
-    this.date = this.helloWorldService.getDate();
+    // this.noun = {}
+    this.noun = this.helloWorldService.say('giraffe');
   }
 
 }

@@ -7,29 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  people: any[] = [{
-    name: 'Jimmy Neutron',
+  people = [{
+    name: 'Harry Potter',
     role: 'Engineer'
   }, {
-    name: 'Leslie Knope',
+    name: 'Hermione Granger',
     role: 'Public Relations'
   }, {
-    name: 'Homer Simpson',
+    name: 'Ron Weasley',
     role: 'Donut-Fetching Intern'
   }, {
-    name: 'Michael Scott',
+    name: 'Albus Dumbledore',
     role: 'Generic Boss'
   }, {
-    name: 'Bruton Gaster',
+    name: 'Severus Snape',
     role: 'Sidekick'
   }, {
+    name: 'Rubeus Hagrid',
+    role: 'Rhubarb?'
+  }, {
     name: 'Leo Martinez',
-    role: 'Developer'
+    role: 'Systems Administrator - bless his soul.'
   }];
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

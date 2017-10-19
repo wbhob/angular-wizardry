@@ -27,25 +27,28 @@ angular.module('mostPopularListingsApp.about', ['ngRoute'])
 		function init() {
 
 		};
-
-		$scope.people = [{
-			name: 'Jimmy Neutron',
-			role: 'Engineer'
-		}, {
-			name: 'Leslie Knope',
-			role: 'Public Relations'
-		}, {
-			name: 'Homer Simpson',
-			role: 'Donut-Fetching Intern'
-		}, {
-			name: 'Michael Scott',
-			role: 'Generic Boss'
-		}, {
-			name: 'Bruton Gaster',
-			role: 'Sidekick'
-		}, {
-			name: 'Leo Martinez',
-			role: 'Developer'
-		}];
+		$scope.people = 'hello';
+		// $scope.people = [{
+		// 	name: 'Harry Potter',
+		// 	role: 'Engineer'
+		// }, {
+		// 	name: 'Hermione Granger',
+		// 	role: 'Public Relations'
+		// }, {
+		// 	name: 'Ron Weasley',
+		// 	role: 'Donut-Fetching Intern'
+		// }, {
+		// 	name: 'Albus Dumbledore',
+		// 	role: 'Generic Boss'
+		// }, {
+		// 	name: 'Severus Snape',
+		// 	role: 'Sidekick'
+		// }, {
+		// 	name: 'Rubeus Hagrid',
+		// 	role: 'Rhubarb?'
+		// }, {
+		// 	name: 'Leo Martinez',
+		// 	role: 'Systems Administrator - bless his soul.'
+		// }];
 
 	}]);

@@ -1,32 +1,37 @@
-<p>This is the login page.</p>
-<form #loginForm="ngForm"
-      (submit)="echoForm()">
-  <div class="form-group">
-    <label for="email">Email Address</label>
-    <input class="form-control"
-           type="email"
-           id="email"
-           email
-           required
-           [(ngModel)]="user.email"
-           name="email"
-           placeholder="Email Address">
-  </div>
-  <div class="form-group">
-    <label for="password">Password</label>
-    <input class="form-control"
-           type="password"
-           id="password"
-           required
-           [(ngModel)]="user.password"
-           name="password"
-           placeholder="Password"
-           autocomplete="new-password">
-  </div>
-  <button class="btn btn-primary"
-          type="submit"
-          [disabled]="!loginForm.valid">Submit</button>
-  <button class="btn btn-default"
-          type="reset"
-          (click)="loginForm.reset()">Reset</button>
-</form>
+<div class="row">
+        <div class="col-sm-4 ml-auto mr-auto">
+                <p>This is the login page.</p>
+                <form #loginForm="ngForm"
+                      (submit)="echoForm()">
+
+                        <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input class="form-control"
+                                       type="email"
+                                       id="email"
+                                       email
+                                       required
+                                       [(ngModel)]="user.email"
+                                       name="email"
+                                       placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                                <label for="password">Password</label>
+                                <input class="form-control"
+                                       type="password"
+                                       id="password"
+                                       required
+                                       [(ngModel)]="user.password"
+                                       name="password"
+                                       placeholder="Password"
+                                       autocomplete="new-password">
+                        </div>
+                        <button class="btn btn-primary"
+                                type="submit"
+                                [disabled]="!loginForm.valid">Submit</button>
+                        <button class="btn btn-default"
+                                type="reset"
+                                (click)="loginForm.reset()">Reset</button>
+                </form>
+        </div>
+</div>

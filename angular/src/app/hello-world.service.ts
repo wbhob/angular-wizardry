@@ -5,8 +5,9 @@ export class HelloWorldService {
 
   constructor() { }
 
-  say(greeting: string) {
-    return `${greeting}, World!`;
+  say(word: string) {
+    // This is a contrived example
+    return word;
   }
 
   getDate() {

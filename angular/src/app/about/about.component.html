@@ -1,9 +1,19 @@
-<p>
-  Welcome to the About page.
-</p>
-<h3>Our Staff</h3>
-<div *ngFor="let person of people">
-  <h5>{{person.name}} </h5>
-  <h6>{{person.role}}</h6>
-  <hr>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="text-center">
+      <h3>Famous Wizards</h3>
+      <h4>These are some pretty awesome people that I won't spoil for you.</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4 mt-3"
+       *ngFor="let person of people">
+    <div class="card">
+      <div class="card-body">
+        <h5>{{person.name}}</h5>
+        <h6>{{person.role}}</h6>
+      </div>
+    </div>
+  </div>
 </div>
